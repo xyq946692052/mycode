@@ -11,5 +11,5 @@ func main() {
 }
 
 func hello(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintln(w, "every is possible,believe yourself")
+	fmt.Fprintln(w, "everything is possible,believe yourself")
 }
