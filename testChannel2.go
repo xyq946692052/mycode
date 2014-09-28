@@ -1,5 +1,5 @@
 package main
-
+//多通道（Select）
 import (
   "fmt"
   "time"
