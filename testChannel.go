@@ -8,9 +8,15 @@ import (
 func fixed_shooting(msg_chan chan string){
  for {
    msg_chan <-"fixed shooting"
-   fmt.Println("continue fixed shooting...")
  }
 }
+
+func three_point_shoot(msg_chan chan string){
+  for{
+    msg_chan <-"three point shooting"
+  }
+}
+
 
 func count(msg_chan chan string){
   for{
@@ -24,6 +30,7 @@ func main(){
   var c chan string
   c = make(chan string)
   go fixed_shooting(c)
+  go three_point_shoot(c)
   go count(c)
   var input string
   fmt.Scanln(&input)
